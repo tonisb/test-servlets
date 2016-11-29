@@ -12,7 +12,7 @@ Deploy the resulting war from `build/libs`
 
 Servlet paths are:
 * APPLICATON_PATH/sleep
-    - Makes the processing thread sleep for 30s
+    - Makes the processing thread sleep for default 30s
+    - Adding parameter ?wait=60000 makes it sleep for 60 seconds
 * APPLICATION_PATH/status/{statusCode}
-    - Just sets the response status as specified (if it is between 201 - 599)
-    - Special case for statusCode of 500 - divide by 0 to create and internal server error.
+    - Just sets the response status as specified (if it is between 200 - 599)
